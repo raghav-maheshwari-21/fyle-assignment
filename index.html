@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Repositories Viewer</h1>
+        <label for="username">Enter GitHub Username:</label>
+        <input type="text" id="username" placeholder="Enter GitHub Username">
+        <button onclick="getRepositories()">Get Repositories</button>
+        <div class="form-group">
+            <label for="search">Search Repositories:</label>
+            <input type="text" class="form-control" id="search" placeholder="Search...">
+        </div>
+        <div id="repositories" class="mt-4"></div>
+        <div id="pagination" class="mt-4"></div>
+        <div id="loader" class="mt-4 text-center"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
